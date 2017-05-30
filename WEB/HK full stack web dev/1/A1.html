@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .field_set{
+        border: 5px solid yellow;
+      }
+      label:hover{font-weight: bold;}
+      input:hover{font-size: 20; font-weight: bold;}
+      td{
+        padding-left: 5px;
+      }
+    </style>
+  <body>
+    <form action="destination" method="post">
+      <h1>Please Enter Your Details For Our Dating Website</h1>
+      <fieldset class="field_set">
+        <legend>
+          Your Face
+        </legend>
+        <label for="userImage">Your Image:</label>
+        <input type="file" name="userImage" id="userImage"/>
+
+      </fieldset>
+
+      <fieldset class="field_set">
+        <legend>
+          Your General Details
+        </legend>
+        <label for="userName">Name:</label>
+        <input type="text" name="name" id="userName" placeholder="Your full name" required/><br />
+        <label for="userGender">Gender:</label>
+        <input type="radio" name="gender" id="userGender" value="Male"/>Male
+        <input type="radio" name="gender" id="userGender" value="Male"/>Female <br />
+        <label for="userAge">Age:</label>
+        <input type="text" name="age" id="userAge" placeholder="Your age" required/><br />
+        <label for="userBirthday">Date of birth:</label>
+        <input type="date" name="birthday" id="userBirthday" required/><br />
+        <label for="userColor">Favorite Color:</label>
+        <input type="color" name="color" id="userColor" required/><br />
+        <label for="userCountry">Which country:</label>
+        <select name="country" required>
+          <option value="hk">Hong Kong</option>
+          <option value="ca">Canada</option>
+          <option value="cn">China</option>
+          <option value="us">USA</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="field_set">
+        <legend>
+          Your Indicators
+        </legend>
+        <label for="userHeight">Height:</label>
+        <span style="background-color:red; color:white"> Short </span>
+        <input type="range" name="height" id="userHeight" min="0" max="250" step="1"/>
+        <span style="background-color:purple; color:white"> Tall </span><br />
+
+        <!--Salary part-->
+        <label for="userSalary">Salary:</label>
+        <span style="background-color:red; color:white; padding-left:5"> Poor </span>
+        <input type="range" name="salary" id="userSalary" min="0" max="25000" step="500"/>
+        <span style="background-color:purple; color:white"> Rich </span><br />
+
+      </fieldset>
+
+      <fieldset class="field_set">
+        <legend>
+          Your Contact Information
+        </legend>
+        <table>
+          <tr>
+            <td align="right">
+              <label for="userEmail">Email:</label>
+            </td>
+            <td>
+              <input type="email" name="email" id="userEmail"/>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              <label for="userMobile">Mobile:</label>
+            </td>
+            <td>
+              <input type="text" name="mobile" id="userMobile"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="userAddress">Address:</label>
+            </td>
+            <td padding="5px">
+              <input type="text" name="address" id="userAddress"/>
+            </td>
+          </tr>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="submit" value="Sumit" />
+    </form>
+  </body>
+</html>
