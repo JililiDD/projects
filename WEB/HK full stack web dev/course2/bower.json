@@ -1,0 +1,24 @@
+{
+  "name": "conFusionBower",
+  "homepage": "yes",
+  "authors": [
+    "Jili"
+  ],
+  "description": "website for a restaurant",
+  "main": "index.html",
+  "keywords": [
+    "conFusion"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
